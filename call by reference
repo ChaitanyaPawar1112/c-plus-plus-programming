@@ -1,0 +1,16 @@
+//call by reference
+#include<iostream>
+using namespace std;
+void modify(int &x)
+{
+    x+=10;
+    cout<<"inside function:x="<<x<<endl;
+    
+}
+int main()//main function
+{
+    int x=10;
+    modify(x);
+    cout<<"outside function:x="<<x;
+    return 0;
+}
